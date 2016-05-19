@@ -13,5 +13,19 @@ namespace Comp2007_s2016_Lesson2C_Part2
         {
 
         }
+
+        protected void SendButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Default.aspx");
+        }
+
+        protected void CancelButton_Click(object sender, EventArgs e)
+        {
+            FirstNameTextBox.Text = "";
+            LastNameTextBox.Text = "";
+            EmailTextBox.Text = "";
+            ContactNumberTextBox.Text = "";
+            MessageTextBox.Text = "";
+        }
     }
 }
